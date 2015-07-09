@@ -21,9 +21,7 @@ _testmain.go
 
 *.exe
 *.test
-*.prof
 
-server.csr
-server.key
-tls.key
-keys
+
+*.pem
+.DS_Store

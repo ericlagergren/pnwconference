@@ -1,0 +1,130 @@
+#!/usr/bin/bash
+set -euo pipefail
+
+PARAMS=`getopt -o :c:m:b:r:h:d -l cpu,mem,both,run,help,database -n 'build' -- "$@"`
+eval set -- "$PARAMS"
+
+usage() { echo "Usage: $0 [-c|--cpu -m|--mem -b|--build -r|--run -h|--help]" 1>&2; exit 1; }
+
+DBNAME="database/database.sql"
+REDISCONFIG="redis.config"
+BUILD="godep go build -a -v -x -gcflags '-m'"
+GENERATE="go generate"
+INSTALL="go install"
+GOVET="go vet"
+BIN="./pnwconference"
+GLOGARGS="-alsologtostderr=true -log_dir=./log/glog/ -v=2"
+FSS="store"
+CPUPROF="-cpuprofile=cpu.prof"
+MEMPROF="-memprofile=mem.prof"
+RUN=false
+BUILDDBS=false
+STRINGERS=("reload")
+
+PROF=""
+while true
+do
+    case "$1" in
+        -c|--cpu)
+            PROF="${CPUPROF}"
+            echo "Profiling CPU."
+            shift
+            ;;
+        -m|--mem)
+            PROF="${MEMPROF}"
+            echo "Profiling MEM."
+            shift
+            ;;
+        -b|--both)
+            PROF="${CPUPROF} ${MEMPROF}";
+            echo "Profiling both CPU and MEM."
+            shift
+            ;;
+        -r|--run)
+            RUN=true
+            shift
+            ;;
+        -d|--database)
+            BUILDDBS=true
+            shift
+            ;;
+        -h|--help)
+            usage
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2;
+            usage
+            ;;
+        --)
+            shift
+            break
+            ;;
+        *)
+            usage
+            ;;
+    esac
+done
+
+if [ "$BUILDDBS" = true ]; then
+    echo "Building database."
+
+    # Try and create our PostgreSQL db.
+    if [ -f "${DBNAME}" ]; then
+        psql pnwconference < ${DBNAME} || sudo -H -u postgres bash -c "psql pnwconference < ${DBNAME}"
+    fi
+
+    echo "Copying config files."
+
+    # Make sure our redis config is correct
+    if [ -f "${REDISCONFIG}" ]; then
+        cp /etc/${REDISCONFIG} ${REDISCONFIG}
+    fi
+fi
+
+# Check that we've created ./store/ I have a bad habit of accidentally
+# deleting it which has led to me wasting an hour debugging a rather
+# stupid mistake.
+if [ ! -d "${FSS}" ]; then
+    echo "Created filesystem store directory"
+    mkdir "${FSS}"
+fi
+
+# Remove our local binary. It's primarily a reminder because sometimes
+# we could be running from $GOPATH/bin not $GOPATH/src/<path>/pnwconference
+if [ -f "${BIN}" ]; then
+    echo "Removed existing local binary."
+    rm "${BIN}"
+fi
+
+# Add stringers here.
+go get -u golang.org/x/tools/cmd/stringer
+(
+    for dir in "${STRINGERS[@]}"
+    do
+        echo "Running 'cd ${dir} && ${GENERATE}'"
+        cd ${dir} && ${GENERATE}
+    done
+)
+
+# Install.
+echo "Running '${INSTALL}'"
+${INSTALL}
+echo "Installed!"
+
+# Double-check go vet.
+echo "Running '${GOVET}'"
+${GOVET}
+echo "Vetted!"
+
+# Build!
+echo "Running build command '${BUILD}'"
+${BUILD} &> rebuild.log
+echo "It's all built!"
+
+# Run the binary!
+if [ "$RUN" = true ]; then
+    RUNSCRIPT="${BIN} ${GLOGARGS} ${PROF}"
+    echo -e "Running ${RUNSCRIPT}\n"
+    echo "----------------------------"
+    sudo ${RUNSCRIPT}
+fi

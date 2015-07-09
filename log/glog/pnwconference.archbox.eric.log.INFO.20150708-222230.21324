@@ -1,0 +1,4 @@
+Log file created at: 2015/07/08 22:22:30
+Running on machine: archbox
+Binary: Built with gc go1.4.2 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg

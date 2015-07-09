@@ -1,0 +1,24 @@
+{{define "title"}}<title>Login</title>{{end}}
+
+{{define "body"}}
+    <section>
+        <h2>Sign in to {{.Host}}</h2>
+        <form action="/login/" method="POST" accept-charset="utf-8">
+            <input name="_csrf" type="hidden" value="{{printf "%s" .CSRF}}">
+
+            <label for="username">Username</label>
+            <input type="text" name="username" value="admin">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" value="9132c0b72e3b782e54dca55ccdb581c7">
+
+            <label for="remember">Remember Me</label>
+            <input type="checkbox" name="remember" value="true">
+
+            <input type="submit" value="log in">
+
+            <br><br>
+            <span class="error-msg">{{.Error}}</span>
+        </form>
+    </section>
+{{end}}

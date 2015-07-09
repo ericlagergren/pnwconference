@@ -1,0 +1,70 @@
+Log file created at: 2015/07/08 22:30:26
+Running on machine: archbox
+Binary: Built with gc go1.4.2 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0708 22:30:26.654418   22879 app.go:103] listen tcp 127.0.0.1:80: bind: address already in use
+goroutine 1 [running]:
+github.com/golang/glog.stacks(0xc20802c001, 0x0, 0x0, 0x0)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:766 +0xcd
+github.com/golang/glog.(*loggingT).output(0xafeb00, 0xc200000003, 0xc208108000, 0xad9887, 0x6, 0x67, 0x0)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:720 +0x2d2
+github.com/golang/glog.(*loggingT).println(0xafeb00, 0xc200000003, 0xc2080f3ef8, 0x1, 0x1)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:633 +0x10b
+github.com/golang/glog.Fatalln(0xc2080f3ef8, 0x1, 0x1)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:1138 +0x50
+main.main()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:103 +0x753
+
+goroutine 6 [chan receive]:
+github.com/golang/glog.(*loggingT).flushDaemon(0xafeb00)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:879 +0x78
+created by github.com/golang/glog.init·1
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:410 +0x2a7
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/lib/go/src/runtime/asm_amd64.s:2232 +0x1
+
+goroutine 8 [chan receive]:
+database/sql.(*DB).connectionOpener(0xc208054b40)
+	/usr/lib/go/src/database/sql/sql.go:589 +0x4c
+created by database/sql.Open
+	/usr/lib/go/src/database/sql/sql.go:452 +0x31c
+
+goroutine 23 [runnable]:
+text/template/parse.lexText(0xc208082d80, 0x9731b0)
+	/usr/lib/go/src/text/template/parse/lex.go:228 +0x37b
+text/template/parse.(*lexer).run(0xc208082d80)
+	/usr/lib/go/src/text/template/parse/lex.go:198 +0x5d
+created by text/template/parse.lex
+	/usr/lib/go/src/text/template/parse/lex.go:191 +0x1ac
+
+goroutine 24 [runnable]:
+golang.org/x/exp/inotify.(*Watcher).readEvents(0xc208102c00)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:152
+created by golang.org/x/exp/inotify.NewWatcher
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:76 +0x381
+
+goroutine 25 [runnable]:
+github.com/EricLagerg/pnwconference/reload.func·001()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/reload/reload.go:85
+created by github.com/EricLagerg/pnwconference/reload.(*Templates).Watch
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/reload/reload.go:106 +0x8c
+
+goroutine 26 [runnable]:
+os/signal.loop()
+	/usr/lib/go/src/os/signal/signal_unix.go:19
+created by os/signal.init·1
+	/usr/lib/go/src/os/signal/signal_unix.go:27 +0x35
+
+goroutine 27 [runnable]:
+main.func·001()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:66
+created by main.main
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:78 +0x2c7
+
+goroutine 28 [runnable]:
+main.func·002()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:96
+created by main.main
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:100 +0x619

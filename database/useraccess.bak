@@ -1,0 +1,138 @@
+// // UserAccessMap is a struct containing a map of accesses.
+// type UserAccessMap struct {
+// 	Accesses map[string]*access
+// 	ticker   *time.Ticker
+// 	*sync.RWMutex
+// }
+
+// // access represents the number of times a user has accessed their account
+// // information.
+// type access struct {
+// 	num    int
+// 	last   time.Time
+// 	status CacheStatus
+// }
+
+// func (u *UserAccessMap) init(d time.Duration) {
+// 	*u = UserAccessMap{
+// 		make(map[string]*access),
+// 		time.NewTicker(d),
+// 		&sync.RWMutex{},
+// 	}
+// 	u.start()
+// }
+
+// // start beings the goroutine that periodically scans the
+// // UserAccessMap's Accesses and checks if they're cacheable.
+// func (u *UserAccessMap) start() {
+// 	go func() {
+// 		for {
+// 			<-u.ticker.C
+// 			// Scan our map, caching as we go.
+// 			for key, _ := range u.Accesses {
+// 				switch u.cacheStatus(key) {
+// 				case HotAccess:
+// 					u.CacheUser(cachePrefix + key)
+// 				case DeadAccess:
+// 					RemoveCachedUser(cachePrefix + key)
+// 				}
+// 			}
+// 		}
+// 	}()
+// }
+
+// // increment increments the map access number by one and sets the last
+// // access time to the current Unix time.
+// func (u *UserAccessMap) increment(name string) {
+// 	u.Lock()
+// 	defer u.Unlock()
+
+// 	acc, ok := u.Accesses[name]
+// 	if !ok {
+// 		acc = &access{0, time.Now(), ColdAccess}
+// 		u.Accesses[name] = acc
+
+// 		return
+// 	}
+
+// 	// Check for dead accesses. We're just approximating here,
+// 	delta := time.Now().Sub(acc.last)
+// 	if delta > deadDuration ||
+// 		acc.status == DeadAccess {
+
+// 		acc.num = 0
+// 	}
+
+// 	acc.last = time.Now()
+// 	acc.num++
+// }
+
+// // remove deletes the access from the map.
+// func (u *UserAccessMap) remove(name string) {
+// 	u.Lock()
+// 	defer u.Unlock()
+// 	delete(u.Accesses, name)
+// }
+
+// // cacheable returns true if the access should be cached. I.e.,
+// // the user has accessed their data enough times that we should
+// // cache it using memcached/redis instead of querying the database.
+// func (u *UserAccessMap) cacheStatus(name string) CacheStatus {
+// 	u.RLock()
+// 	defer u.RUnlock()
+
+// 	acc := u.Accesses[name]
+
+// 	if acc.status == CachedAccess {
+// 		return CachedAccess
+// 	}
+
+// 	delta := time.Now().Sub(acc.last)
+
+// 	// More than enough hits and the last hit was within the
+// 	// allowable time frame.
+// 	if acc.num > cacheNumber &&
+// 		delta < cacheDuration {
+// 		return HotAccess
+// 	}
+
+// 	// If the last time stamp was a long time ago, it's dead.
+// 	if delta > deadDuration {
+// 		return DeadAccess
+// 	}
+
+// 	// Our default state.
+// 	return ColdAccess
+// }
+
+// // CacheUser caches a user's information memcached/redis.
+// func (u *UserAccessMap) CacheUser(name string) error {
+// 	conn := Pool.Get()
+// 	defer conn.Close()
+
+// 	// Name without prefix
+// 	shortName := name[len(cachePrefix):]
+
+// 	user, err := getUserByID(name)
+// 	obj, err := json.Marshal(user)
+
+// 	reply, err := conn.Do("SET", name, obj)
+// 	if err != nil {
+// 		glog.Errorln(err, reply)
+// 	} else {
+// 		u.Lock()
+// 		u.Accesses[shortName].status = CachedAccess
+// 		u.Unlock()
+// 	}
+
+// 	return err
+// }
+
+// // RemoveCachedUser removes a user's cached information from memcached/redis.
+// func RemoveCachedUser(name string) {
+// 	conn := Pool.Get()
+// 	defer conn.Close()
+
+// 	// TODO: Still ignore the errors?
+// 	conn.Do("DEL", name)
+// }

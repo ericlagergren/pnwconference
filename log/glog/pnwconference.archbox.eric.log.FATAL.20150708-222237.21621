@@ -1,0 +1,82 @@
+Log file created at: 2015/07/08 22:22:37
+Running on machine: archbox
+Binary: Built with gc go1.4.2 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0708 22:22:37.604852   21621 app.go:103] listen tcp 127.0.0.1:6969: bind: address already in use
+goroutine 1 [running]:
+github.com/golang/glog.stacks(0xc20802a001, 0x0, 0x0, 0x0)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:766 +0xcd
+github.com/golang/glog.(*loggingT).output(0xafeb00, 0xc200000003, 0xc2081c9b00, 0xad9827, 0x6, 0x67, 0x0)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:720 +0x2d2
+github.com/golang/glog.(*loggingT).println(0xafeb00, 0xc200000003, 0xc208239e98, 0x1, 0x1)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:633 +0x10b
+github.com/golang/glog.Fatalln(0xc208239e98, 0x1, 0x1)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:1138 +0x50
+main.main()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:103 +0x788
+
+goroutine 6 [chan receive]:
+github.com/golang/glog.(*loggingT).flushDaemon(0xafeb00)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:879 +0x78
+created by github.com/golang/glog.init·1
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog/glog.go:410 +0x2a7
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/lib/go/src/runtime/asm_amd64.s:2232 +0x1
+
+goroutine 8 [chan receive]:
+database/sql.(*DB).connectionOpener(0xc20803caa0)
+	/usr/lib/go/src/database/sql/sql.go:589 +0x4c
+created by database/sql.Open
+	/usr/lib/go/src/database/sql/sql.go:452 +0x31c
+
+goroutine 24 [syscall]:
+syscall.Syscall(0x0, 0x3, 0xc20824deb0, 0x10000, 0x0, 0x0, 0x0)
+	/usr/lib/go/src/syscall/asm_linux_amd64.s:21 +0x5
+syscall.read(0x3, 0xc20824deb0, 0x10000, 0x10000, 0x0, 0x0, 0x0)
+	/usr/lib/go/src/syscall/zsyscall_linux_amd64.go:867 +0x6e
+syscall.Read(0x3, 0xc20824deb0, 0x10000, 0x10000, 0x0, 0x0, 0x0)
+	/usr/lib/go/src/syscall/syscall_unix.go:136 +0x58
+golang.org/x/exp/inotify.(*Watcher).readEvents(0xc2080f2c00)
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:156 +0xa4
+created by golang.org/x/exp/inotify.NewWatcher
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:76 +0x381
+
+goroutine 25 [select]:
+github.com/EricLagerg/pnwconference/reload.func·001()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/reload/reload.go:87 +0x4df
+created by github.com/EricLagerg/pnwconference/reload.(*Templates).Watch
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/reload/reload.go:106 +0x8c
+
+goroutine 26 [syscall]:
+os/signal.loop()
+	/usr/lib/go/src/os/signal/signal_unix.go:21 +0x1f
+created by os/signal.init·1
+	/usr/lib/go/src/os/signal/signal_unix.go:27 +0x35
+
+goroutine 27 [chan receive]:
+main.func·001()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:68 +0x6b
+created by main.main
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:78 +0x2c7
+
+goroutine 28 [IO wait]:
+net.(*pollDesc).Wait(0xc208010220, 0x72, 0x0, 0x0)
+	/usr/lib/go/src/net/fd_poll_runtime.go:84 +0x47
+net.(*pollDesc).WaitRead(0xc208010220, 0x0, 0x0)
+	/usr/lib/go/src/net/fd_poll_runtime.go:89 +0x43
+net.(*netFD).accept(0xc2080101c0, 0x0, 0x7f1c9d20ad20, 0xc208194040)
+	/usr/lib/go/src/net/fd_unix.go:419 +0x40b
+net.(*TCPListener).AcceptTCP(0xc20802a018, 0x477294, 0x0, 0x0)
+	/usr/lib/go/src/net/tcpsock_posix.go:234 +0x4e
+net/http.tcpKeepAliveListener.Accept(0xc20802a018, 0x0, 0x0, 0x0, 0x0)
+	/usr/lib/go/src/net/http/server.go:1976 +0x4c
+net/http.(*Server).Serve(0xc2080588a0, 0x7f1c9d210cd0, 0xc20802a018, 0x0, 0x0)
+	/usr/lib/go/src/net/http/server.go:1728 +0x92
+net/http.(*Server).ListenAndServe(0xc2080588a0, 0x0, 0x0)
+	/usr/lib/go/src/net/http/server.go:1718 +0x154
+main.func·002()
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:97 +0x27
+created by main.main
+	/home/eric/gopath/src/github.com/EricLagerg/pnwconference/app.go:100 +0x66e

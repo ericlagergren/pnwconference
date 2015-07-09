@@ -1,0 +1,67 @@
+{
+	"ImportPath": "github.com/EricLagerg/pnwconference",
+	"GoVersion": "go1.4.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/EricLagerg/UsefulHandler",
+			"Rev": "e6e99043408ef20dde0a913fdad870660e75c872"
+		},
+		{
+			"ImportPath": "github.com/EricLagerg/compressedhandler",
+			"Rev": "79fbee55a327684ddab98b6bae1c40daef46b7b2"
+		},
+		{
+			"ImportPath": "github.com/EricLagerg/go-prng/xorshift",
+			"Rev": "57e559b8614df656ef3ab24f4bf56b670f083508"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Rev": "3e4727f0ef5938d3a846cdb57e560dba4419e854"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Rev": "3e4727f0ef5938d3a846cdb57e560dba4419e854"
+		},
+		{
+			"ImportPath": "github.com/golang/glog",
+			"Rev": "44145f04b68cf362d9c4df2182967c2275eaefed"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "215affda49addc4c8ef7e2534915df2c8c35c6cd"
+		},
+		{
+			"ImportPath": "github.com/gorilla/securecookie",
+			"Rev": "68004d2ba3cbc80d3a9949ea431b5c9f22ee8707"
+		},
+		{
+			"ImportPath": "github.com/gorilla/sessions",
+			"Rev": "f61c3ec2cf65d69e7efedfd4d060fe128882c951"
+		},
+		{
+			"ImportPath": "github.com/julienschmidt/httprouter",
+			"Rev": "70708e46004c7bcb09b70e685a8b74a690135387"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Comment": "go1.0-cutoff-51-ga8d8d01",
+			"Rev": "a8d8d01c4f91602f876bf5aa210274e8203a6b45"
+		},
+		{
+			"ImportPath": "github.com/unrolled/secure",
+			"Rev": "b0dfc4c016790a7c4c3a64dbb54d42e21cfaf471"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/bcrypt",
+			"Rev": "cc04154d65fb9296747569b107cfd05380b1ea3e"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/blowfish",
+			"Rev": "cc04154d65fb9296747569b107cfd05380b1ea3e"
+		},
+		{
+			"ImportPath": "golang.org/x/exp/inotify",
+			"Rev": "d00e13ec443927751b2bd49e97dea7bf3b6a6487"
+		}
+	]
+}

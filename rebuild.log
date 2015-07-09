@@ -1,0 +1,1098 @@
+WORK=/tmp/go-build289222498
+github.com/EricLagerg/compressedhandler
+mkdir -p $WORK/github.com/EricLagerg/compressedhandler/_obj/
+mkdir -p $WORK/github.com/EricLagerg/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/EricLagerg/compressedhandler
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/compressedhandler.a -trimpath $WORK -m -p github.com/EricLagerg/compressedhandler -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/EricLagerg/compressedhandler -I $WORK -pack ./compress.go ./errors.go ./flatetype_string.go
+github.com/golang/glog
+mkdir -p $WORK/github.com/golang/glog/_obj/
+mkdir -p $WORK/github.com/golang/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/golang/glog.a -trimpath $WORK -m -p github.com/golang/glog -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/golang/glog -I $WORK -pack ./glog.go ./glog_file.go
+github.com/EricLagerg/pnwconference/controllers/datatypes
+github.com/gorilla/context
+mkdir -p $WORK/github.com/gorilla/context/_obj/
+mkdir -p $WORK/github.com/gorilla/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/gorilla/context
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/gorilla/context.a -trimpath $WORK -m -p github.com/gorilla/context -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/gorilla/context -I $WORK -pack ./context.go ./doc.go
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/controllers/datatypes/_obj/
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/controllers/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/controllers/datatypes
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/pnwconference/controllers/datatypes.a -trimpath $WORK -m -p github.com/EricLagerg/pnwconference/controllers/datatypes -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/controllers/datatypes -I $WORK -pack ./types.go
+github.com/gorilla/securecookie
+mkdir -p $WORK/github.com/gorilla/securecookie/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/gorilla/securecookie
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/gorilla/securecookie.a -trimpath $WORK -m -p github.com/gorilla/securecookie -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/gorilla/securecookie -I $WORK -pack ./doc.go ./securecookie.go
+# github.com/gorilla/context
+Godeps/_workspace/src/github.com/gorilla/context/context.go:102: can inline clear
+Godeps/_workspace/src/github.com/gorilla/context/context.go:24: inlining call to time.Time.Unix
+Godeps/_workspace/src/github.com/gorilla/context/context.go:97: inlining call to clear
+Godeps/_workspace/src/github.com/gorilla/context/context.go:124: inlining call to time.Time.Unix
+Godeps/_workspace/src/github.com/gorilla/context/context.go:127: inlining call to clear
+Godeps/_workspace/src/github.com/gorilla/context/context.go:21: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:20: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/context/context.go:23: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:20: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/context/context.go:20: leaking param: key
+Godeps/_workspace/src/github.com/gorilla/context/context.go:20: leaking param: val
+Godeps/_workspace/src/github.com/gorilla/context/context.go:27: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:32: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:35: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:38: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:31: Get r does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:31: Get key does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:44: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:47: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:50: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:43: GetOk r does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:43: GetOk key does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:56: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:62: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:65: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:58: make(map[interface {}]interface {}, len(context)) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:55: GetAll r does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:72: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:78: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:74: make(map[interface {}]interface {}, len(context)) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:71: GetAllOk r does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:84: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:88: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:83: Delete r does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:83: Delete key does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:96: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:98: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:95: Clear r does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:102: clear r does not escape
+Godeps/_workspace/src/github.com/gorilla/context/context.go:117: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:121: make(map[*http.Request]map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:122: make(map[*http.Request]int64, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:132: mutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:141: leaking closure reference h
+Godeps/_workspace/src/github.com/gorilla/context/context.go:138: leaking param: h
+Godeps/_workspace/src/github.com/gorilla/context/context.go:139: leaking param: w
+Godeps/_workspace/src/github.com/gorilla/context/context.go:139: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/context/context.go:139: func literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/context/context.go:138: moved to heap: h
+Godeps/_workspace/src/github.com/gorilla/context/context.go:141: &h escapes to heap
+github.com/garyburd/redigo/internal
+mkdir -p $WORK/github.com/garyburd/redigo/internal/_obj/
+mkdir -p $WORK/github.com/garyburd/redigo/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/garyburd/redigo/internal
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/garyburd/redigo/internal.a -trimpath $WORK -m -p github.com/garyburd/redigo/internal -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/garyburd/redigo/internal -I $WORK -pack ./commandinfo.go
+# github.com/garyburd/redigo/internal
+Godeps/_workspace/src/github.com/garyburd/redigo/internal/commandinfo.go:43: LookupCommandInfo commandName does not escape
+github.com/garyburd/redigo/redis
+mkdir -p $WORK/github.com/garyburd/redigo/redis/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/garyburd/redigo/redis
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/garyburd/redigo/redis.a -trimpath $WORK -m -p github.com/garyburd/redigo/redis -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/garyburd/redigo/redis -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./conn.go ./doc.go ./log.go ./pool.go ./pubsub.go ./redis.go ./reply.go ./scan.go ./script.go
+# github.com/EricLagerg/compressedhandler
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:148: inlining call to strings.HasPrefix
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:47: leaking param: c
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:56: leaking param: c
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:56: leaking param: b
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:140: parseCoding s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:116: make(codings, 0) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:116: make(codings, 0) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:117: moved to heap: e
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:131: &e escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:117: make(ErrorList, 0) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:115: parseEncodings s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:90: accepts r does not escape
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:74: leaking closure reference h
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:62: leaking param: h
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:74: leaking closure reference h
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:62: leaking param: h
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:74: leaking closure reference h
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:62: leaking param: h
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:63: func literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:62: moved to heap: h
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/compress.go:74: &h escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/errors.go:19: leaking param: k
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/errors.go:19: leaking param: k
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/errors.go:20: (*KeyError).Error ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/errors.go:27: (*ErrorList).Error e does not escape
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/errors.go:28: (*ErrorList).Error ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/compressedhandler/flatetype_string.go:13: flateType.String ... argument does not escape
+github.com/EricLagerg/UsefulHandler
+mkdir -p $WORK/github.com/EricLagerg/UsefulHandler/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/UsefulHandler.a -trimpath $WORK -m -p github.com/EricLagerg/UsefulHandler -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./apache.go ./handler.go ./log_format.go ./logs.go
+# github.com/gorilla/securecookie
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:103: can inline (*SecureCookie).MaxLength
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:111: can inline (*SecureCookie).MaxAge
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:119: can inline (*SecureCookie).MinAge
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:127: can inline (*SecureCookie).HashFunc
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:149: can inline (*SecureCookie).SetSerializer
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:137: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:194: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:218: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:238: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:242: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:245: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:271: inlining call to time.Time.UTC
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:271: inlining call to time.Time.Unix
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:302: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:327: inlining call to errors.New
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:339: inlining call to Bytes
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:344: inlining call to bytes.NewBuffer
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:354: inlining call to json.NewEncoder
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:359: inlining call to Bytes
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:364: inlining call to bytes.NewReader
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:364: inlining call to json.NewDecoder
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:375: inlining call to EncodedLen
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:382: inlining call to DecodedLen
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:137: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:135: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:135: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:135: (*SecureCookie).BlockFunc f does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:49: leaking param: hashKey
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:49: leaking param: blockKey
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:56: &SecureCookie literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:49: leaking param: hashKey
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:49: leaking param: blockKey
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:56: &SecureCookie literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:49: leaking param: hashKey
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:49: leaking param: blockKey
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:103: leaking param: s to result ~r1
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:111: leaking param: s to result ~r1
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:119: leaking param: s to result ~r1
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:127: leaking param: f
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:127: leaking param: s to result ~r1
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:149: leaking param: sz
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:149: leaking param: s to result ~r1
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:394: make([]byte, length) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:394: make([]byte, length) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:299: leaking param: block
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:299: leaking param: block
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:299: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:299: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:302: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:375: make([]byte, int(~r0)) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:374: encode value does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:269: (*SecureCookie).timestamp s does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:279: leaking param: h
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:279: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:279: leaking param: h
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:164: (*SecureCookie).Encode leaking param s content to result ~r3
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:164: (*SecureCookie).Encode leaking param s content to result ~r3
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:194: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:164: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:164: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:164: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:164: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:164: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:186: (*SecureCookie).Encode ... argument does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:382: make([]byte, int(~r0)) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:381: decode value does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:285: leaking param: h
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:285: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:285: verifyMac mac does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:315: leaking param: block
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:315: leaking param: block
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:315: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:315: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:315: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:327: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: (*SecureCookie).Decode leaking param s content to result ~r3
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: (*SecureCookie).Decode leaking param s content to result ~r3
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:218: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:238: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:242: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:245: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: leaking param: dst
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: (*SecureCookie).Decode name does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:208: (*SecureCookie).Decode value does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:334: new(bytes.Buffer) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:333: leaking param: src
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:343: leaking param: src
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:344: &bytes.Buffer literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:343: leaking param: src
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:343: leaking param: dst
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:353: new(bytes.Buffer) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:354: &json.Encoder literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:353: new(bytes.Buffer) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:352: leaking param: src
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:363: leaking param: src
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:364: &bytes.Reader literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:363: leaking param: src
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:364: &json.Decoder literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:364: &bytes.Reader literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:363: leaking param: src
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:363: leaking param: dst
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:405: make([]Codec, len(keyPairs) / 2 + len(keyPairs) % 2) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:404: CodecsFromPairs keyPairs does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:420: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:420: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:420: EncodeMulti codecs does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:440: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:440: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:440: leaking param: dst
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:440: DecodeMulti codecs does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:459: MultiError.Error m does not escape
+Godeps/_workspace/src/github.com/gorilla/securecookie/securecookie.go:477: MultiError.Error ... argument does not escape
+github.com/gorilla/sessions
+mkdir -p $WORK/github.com/gorilla/sessions/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/gorilla/sessions
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/gorilla/sessions.a -trimpath $WORK -m -p github.com/gorilla/sessions -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/gorilla/sessions -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./doc.go ./sessions.go ./store.go
+# github.com/golang/glog
+Godeps/_workspace/src/github.com/golang/glog/glog.go:133: can inline (*severity).Get
+Godeps/_workspace/src/github.com/golang/glog/glog.go:222: can inline (*Level).Get
+Godeps/_workspace/src/github.com/golang/glog/glog.go:277: can inline (*moduleSpec).Get
+Godeps/_workspace/src/github.com/golang/glog/glog.go:329: can inline (*traceLocation).isSet
+Godeps/_workspace/src/github.com/golang/glog/glog.go:355: can inline (*traceLocation).Get
+Godeps/_workspace/src/github.com/golang/glog/glog.go:594: can inline (*buffer).twoDigits
+Godeps/_workspace/src/github.com/golang/glog/glog.go:721: can inline func·001
+Godeps/_workspace/src/github.com/golang/glog/glog.go:272: inlining call to String
+Godeps/_workspace/src/github.com/golang/glog/glog.go:298: inlining call to errors.New
+Godeps/_workspace/src/github.com/golang/glog/glog.go:301: inlining call to errors.New
+Godeps/_workspace/src/github.com/golang/glog/glog.go:382: inlining call to errors.New
+Godeps/_workspace/src/github.com/golang/glog/glog.go:506: inlining call to Len
+Godeps/_workspace/src/github.com/golang/glog/glog.go:566: inlining call to (*buffer).twoDigits
+Godeps/_workspace/src/github.com/golang/glog/glog.go:567: inlining call to (*buffer).twoDigits
+Godeps/_workspace/src/github.com/golang/glog/glog.go:569: inlining call to (*buffer).twoDigits
+Godeps/_workspace/src/github.com/golang/glog/glog.go:571: inlining call to (*buffer).twoDigits
+Godeps/_workspace/src/github.com/golang/glog/glog.go:573: inlining call to (*buffer).twoDigits
+Godeps/_workspace/src/github.com/golang/glog/glog.go:575: inlining call to time.Time.Nanosecond
+Godeps/_workspace/src/github.com/golang/glog/glog.go:643: inlining call to Bytes
+Godeps/_workspace/src/github.com/golang/glog/glog.go:643: inlining call to Len
+Godeps/_workspace/src/github.com/golang/glog/glog.go:652: inlining call to Bytes
+Godeps/_workspace/src/github.com/golang/glog/glog.go:652: inlining call to Len
+Godeps/_workspace/src/github.com/golang/glog/glog.go:664: inlining call to Bytes
+Godeps/_workspace/src/github.com/golang/glog/glog.go:664: inlining call to Len
+Godeps/_workspace/src/github.com/golang/glog/glog.go:673: inlining call to (*traceLocation).isSet
+Godeps/_workspace/src/github.com/golang/glog/glog.go:678: inlining call to Bytes
+Godeps/_workspace/src/github.com/golang/glog/glog.go:838: inlining call to bufio.NewWriterSize
+Godeps/_workspace/src/github.com/golang/glog/glog.go:844: inlining call to runtime.Version
+Godeps/_workspace/src/github.com/golang/glog/glog.go:846: inlining call to Bytes
+Godeps/_workspace/src/github.com/golang/glog/glog.go:962: inlining call to strings.HasSuffix
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:108: inlining call to errors.New
+Godeps/_workspace/src/github.com/golang/glog/glog.go:118: leaking param: s
+Godeps/_workspace/src/github.com/golang/glog/glog.go:123: leaking param: s
+Godeps/_workspace/src/github.com/golang/glog/glog.go:128: (*severity).String s does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:133: (*severity).Get s does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:154: severityByName s does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:138: leaking param: value
+Godeps/_workspace/src/github.com/golang/glog/glog.go:150: logging.stderrThreshold escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:138: (*severity).Set s does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:172: &s.lines escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:171: leaking param: s
+Godeps/_workspace/src/github.com/golang/glog/glog.go:177: &s.bytes escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:176: leaking param: s
+Godeps/_workspace/src/github.com/golang/glog/glog.go:207: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:212: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:217: (*Level).String l does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:222: (*Level).Get l does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:471: logging.verbosity escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:473: &logging.filterLength escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:469: leaking param: filter
+Godeps/_workspace/src/github.com/golang/glog/glog.go:478: make(map[uintptr]Level, 0) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:483: &logging.filterLength escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:484: logging.verbosity escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:469: (*loggingT).setVState l does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:227: leaking param: value
+Godeps/_workspace/src/github.com/golang/glog/glog.go:232: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:233: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:227: (*Level).Set l does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:234: (*Level).Set logging does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:253: leaking param: file
+Godeps/_workspace/src/github.com/golang/glog/glog.go:253: (*modulePat).match m does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:263: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:264: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:265: moved to heap: b
+Godeps/_workspace/src/github.com/golang/glog/glog.go:268: b escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:270: &b escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:261: (*moduleSpec).String m does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:270: (*moduleSpec).String ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:272: (*moduleSpec).String b does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:277: (*moduleSpec).Get m does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:317: isLiteral pattern does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:298: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:301: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:309: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:310: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:284: (*moduleSpec).Set m does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:284: (*moduleSpec).Set value does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:311: (*moduleSpec).Set logging does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:329: (*traceLocation).isSet t does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:336: (*traceLocation).match t does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:336: (*traceLocation).match file does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:348: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:349: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:346: leaking param: t
+Godeps/_workspace/src/github.com/golang/glog/glog.go:350: (*traceLocation).String ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:355: (*traceLocation).Get t does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:382: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:384: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:385: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:363: (*traceLocation).Set t does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:363: (*traceLocation).Set value does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:893: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:893: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:886: l.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:885: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:885: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:888: l.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:885: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:878: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:399: &logging.toStderr escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:400: &logging.alsoToStderr escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:401: &logging.verbosity escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:402: &logging.stderrThreshold escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:403: &logging.vmodule escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:404: &logging.traceLocation escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:410: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:410: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:409: init·1 logging does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:415: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:489: l.freeListMu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:488: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:488: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:494: l.freeListMu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:488: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:499: b.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:488: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:496: new(buffer) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:496: new(buffer) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:510: l.freeListMu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:505: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:505: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:505: leaking param: b
+Godeps/_workspace/src/github.com/golang/glog/glog.go:513: l.freeListMu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:505: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:506: (*loggingT).putBuffer b.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:603: (*buffer).nDigits buf does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:615: (*buffer).someDigits buf does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:627: (*buffer).someDigits buf.tmp does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:627: (*buffer).someDigits buf.tmp does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:550: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:579: buf.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:580: buf.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:585: buf.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:550: (*loggingT).formatHeader file does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:579: (*loggingT).formatHeader buf.tmp does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:585: (*loggingT).formatHeader buf.tmp does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:535: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:594: (*buffer).twoDigits buf does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:765: make([]byte, n) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:765: make([]byte, n) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:765: make([]byte, n) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:765: make([]byte, n) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:83: leaking param: tag
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:83: logName t does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:95: logName ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:106: onceLogDirs escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:105: leaking param: tag
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:108: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:105: create t does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:113: create ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:116: create ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:123: create ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:826: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:826: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:838: make([]byte, bufio.size·3) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:826: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:826: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:838: &bufio.Writer literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:838: make([]byte, bufio.size·3) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:826: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:841: moved to heap: buf
+Godeps/_workspace/src/github.com/golang/glog/glog.go:842: &buf escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:843: &buf escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:844: &buf escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:845: &buf escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:826: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:826: (*syncBuffer).rotateFile now does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:842: (*syncBuffer).rotateFile ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:843: (*syncBuffer).rotateFile ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:844: (*syncBuffer).rotateFile ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:846: (*syncBuffer).rotateFile buf does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:858: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:865: &syncBuffer literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:858: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:865: &syncBuffer literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:858: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:784: leaking param: err
+Godeps/_workspace/src/github.com/golang/glog/glog.go:784: leaking param: err
+Godeps/_workspace/src/github.com/golang/glog/glog.go:784: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:785: (*loggingT).exit ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:745: func literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:744: moved to heap: done
+Godeps/_workspace/src/github.com/golang/glog/glog.go:747: &done escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:744: make(chan bool, 1) escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:752: timeoutFlush ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:672: l.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:675: buf.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: buf
+Godeps/_workspace/src/github.com/golang/glog/glog.go:682: l.stderrThreshold escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: buf
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: buf
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: buf
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: buf
+Godeps/_workspace/src/github.com/golang/glog/glog.go:707: &fatalNoStacks escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:708: l.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:721: func literal escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:727: l.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: buf
+Godeps/_workspace/src/github.com/golang/glog/glog.go:732: l.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:734: &stats.lines escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:735: &stats.bytes escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:671: (*loggingT).output file does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:673: (*loggingT).output l.traceLocation does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:674: (*loggingT).output l.traceLocation does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:678: (*loggingT).output buf.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:630: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:630: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:630: (*loggingT).println args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:640: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:644: buf.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:640: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:640: (*loggingT).printDepth args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:643: (*loggingT).printDepth buf.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:643: (*loggingT).printDepth buf.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:636: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:636: (*loggingT).print args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:649: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:653: buf.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:649: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:649: (*loggingT).printf format does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:649: (*loggingT).printf args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:652: (*loggingT).printf buf.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:652: (*loggingT).printf buf.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:661: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:665: buf.Buffer escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:661: leaking param: l
+Godeps/_workspace/src/github.com/golang/glog/glog.go:661: (*loggingT).printWithFileLine file does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:661: (*loggingT).printWithFileLine args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:664: (*loggingT).printWithFileLine buf.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:664: (*loggingT).printWithFileLine buf.Buffer does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:807: (*syncBuffer).Sync sb does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:811: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:811: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:811: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:811: leaking param: p
+Godeps/_workspace/src/github.com/golang/glog/glog.go:811: leaking param: sb
+Godeps/_workspace/src/github.com/golang/glog/glog.go:911: leaking param: name
+Godeps/_workspace/src/github.com/golang/glog/glog.go:914: CopyStandardLogTo ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:928: leaking param: b
+Godeps/_workspace/src/github.com/golang/glog/glog.go:928: leaking param: b
+Godeps/_workspace/src/github.com/golang/glog/glog.go:928: leaking param: b
+Godeps/_workspace/src/github.com/golang/glog/glog.go:948: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:935: logBridge.Write []byte literal does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:936: logBridge.Write ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:942: logBridge.Write ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:948: logBridge.Write ... argument does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:958: (*loggingT).setV l does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:969: (*loggingT).setV filter does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1001: logging.verbosity escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1007: &logging.filterLength escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1011: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1012: logging.mu escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1013: V logging.pcs does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1018: V logging does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1029: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1027: Verbose.Info args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1037: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1035: Verbose.Infoln args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1045: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1043: Verbose.Infof format does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1043: Verbose.Infof args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1052: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1051: Info args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1058: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1057: InfoDepth args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1064: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1063: Infoln args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1070: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1069: Infof format does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1069: Infof args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1076: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1075: Warning args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1082: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1081: WarningDepth args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1088: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1087: Warningln args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1094: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1093: Warningf format does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1093: Warningf args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1100: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1099: Error args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1106: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1105: ErrorDepth args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1112: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1111: Errorln args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1118: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1117: Errorf format does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1117: Errorf args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1125: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1124: Fatal args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1131: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1130: FatalDepth args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1138: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1137: Fatalln args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1145: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1144: Fatalf format does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1144: Fatalf args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1155: &fatalNoStacks escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1156: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1154: Exit args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1162: &fatalNoStacks escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1163: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1161: ExitDepth args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1168: &fatalNoStacks escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1169: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1167: Exitln args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1175: &fatalNoStacks escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1176: logging escapes to heap
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1174: Exitf format does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog.go:1174: Exitf args does not escape
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:74: leaking param: hostname
+Godeps/_workspace/src/github.com/golang/glog/glog_file.go:74: leaking param: hostname
+<autogenerated>:27: inlining call to Available
+<autogenerated>:27: moved to heap: bufio.b·2
+<autogenerated>:29: inlining call to Buffered
+<autogenerated>:29: moved to heap: bufio.b·2
+<autogenerated>:35: inlining call to Reset
+<autogenerated>:35: moved to heap: bufio.b·1
+<autogenerated>:35: moved to heap: bufio.w·2
+github.com/EricLagerg/pnwconference/cleanup
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/cleanup/_obj/
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/cleanup
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/pnwconference/cleanup.a -trimpath $WORK -m -p github.com/EricLagerg/pnwconference/cleanup -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/cleanup -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./cleanup.go
+# github.com/EricLagerg/pnwconference/cleanup
+cleanup/cleanup.go:85: inlining call to reflect.Value.IsValid
+cleanup/cleanup.go:21: leaking param: name
+cleanup/cleanup.go:21: leaking param: name
+cleanup/cleanup.go:21: leaking param: fn
+cleanup/cleanup.go:21: leaking param: name
+cleanup/cleanup.go:21: leaking param: args
+cleanup/cleanup.go:23: Register ... argument does not escape
+cleanup/cleanup.go:98: leaking param: typ
+cleanup/cleanup.go:52: leaking param: fn
+cleanup/cleanup.go:52: call args does not escape
+cleanup/cleanup.go:57: call ... argument does not escape
+cleanup/cleanup.go:66: call ... argument does not escape
+cleanup/cleanup.go:71: call ... argument does not escape
+cleanup/cleanup.go:75: call make([]reflect.Value, len(args)) does not escape
+cleanup/cleanup.go:89: call ... argument does not escape
+cleanup/cleanup.go:37: Run ... argument does not escape
+cleanup/cleanup.go:43: RunAndQuit s does not escape
+github.com/lib/pq/oid
+mkdir -p $WORK/github.com/lib/pq/oid/_obj/
+mkdir -p $WORK/github.com/lib/pq/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/lib/pq/oid
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/lib/pq/oid.a -trimpath $WORK -m -p github.com/lib/pq/oid -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/lib/pq/oid -I $WORK -pack ./doc.go ./types.go
+github.com/lib/pq
+mkdir -p $WORK/github.com/lib/pq/_obj/
+mkdir -p $WORK/github.com/lib/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/lib/pq
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/lib/pq.a -trimpath $WORK -m -p github.com/lib/pq -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/lib/pq -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./buf.go ./conn.go ./copy.go ./doc.go ./encode.go ./error.go ./notify.go ./url.go ./user_posix.go
+# github.com/EricLagerg/UsefulHandler
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:147: can inline DefaultOptions
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:136: inlining call to time.Time.UTC
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:28: inlining call to time.Duration.Seconds
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:37: inlining call to time.Duration.Seconds
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:47: inlining call to time.Duration.Seconds
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:117: inlining call to DefaultOptions
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:203: inlining call to strings.HasSuffix
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:376: inlining call to time.Time.UnixNano
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:77: leaking param: a
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:380: randmu escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:387: randmu escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:391: randName prefix does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:343: leaking param: p
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:343: leaking param: p
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:161: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:308: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:308: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:314: (*Log).SetWriter ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:310: (*Log).SetWriter map[dest]io.Writer literal does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:358: leaking param: p
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:358: leaking param: p
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:358: leaking param: s
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:257: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:257: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:257: leaking param: randName
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:257: leaking param: randName
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:261: (*Log).doRotate ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:267: (*Log).doRotate ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:229: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:229: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:229: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:229: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:229: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:229: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:86: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:86: leaking param: out
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:86: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:98: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:98: leaking param: p
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:106: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: rw
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: h
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:129: &ApacheLogRecord literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: rw
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:129: &ApacheLogRecord literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: rw
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/apache.go:112: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/handler.go:19: leaking param: handler
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/handler.go:21: &Handler literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:20: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:20: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:20: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:21: (*ApacheLogRecord).formattedTimeRequest ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:24: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:24: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:24: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:24: commonLog.Print l does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:28: commonLog.Print ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:33: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:33: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:33: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:33: commonLogWithVHost.Print l does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:37: commonLogWithVHost.Print ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:42: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:42: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:42: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:42: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:42: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:42: ncsaLog.Print l does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:47: ncsaLog.Print ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:52: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:52: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:52: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:52: refererLog.Print l does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:53: refererLog.Print ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:57: leaking param: w
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:57: leaking param: r
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:57: agentLog.Print l does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/log_format.go:58: agentLog.Print ... argument does not escape
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:330: make(chan string, n) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:331: &sync.Mutex literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:331: &randPool literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:330: make(chan string, n) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:331: &sync.Mutex literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:331: &randPool literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:330: make(chan string, n) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:331: &sync.Mutex literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:115: leaking param: opts
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:117: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:121: &Log literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:115: leaking param: opts
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:117: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:121: &Log literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:115: leaking param: opts
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:117: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:140: &sync.Mutex literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:121: &Log literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:115: leaking param: opts
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:117: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:180: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:169: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:98: leaking param: opts
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:98: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:153: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:300: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:300: leaking param: l
+Godeps/_workspace/src/github.com/EricLagerg/UsefulHandler/logs.go:300: leaking param: l
+github.com/EricLagerg/pnwconference/paths
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/paths/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/paths
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/pnwconference/paths.a -trimpath $WORK -m -p github.com/EricLagerg/pnwconference/paths -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/paths -I $WORK -pack ./paths.go
+github.com/EricLagerg/go-prng/xorshift
+mkdir -p $WORK/github.com/EricLagerg/go-prng/xorshift/_obj/
+mkdir -p $WORK/github.com/EricLagerg/go-prng/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/go-prng/xorshift.a -trimpath $WORK -m -p github.com/EricLagerg/go-prng/xorshift -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift -I $WORK -pack ./xorshift.go
+# github.com/gorilla/sessions
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:38: can inline NewSession
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:97: can inline (*Session).Name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:102: can inline (*Session).Store
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:86: inlining call to NewSession
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:104: inlining call to (*Session).Name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:109: inlining call to (*Session).Name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:154: inlining call to MaxLength
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: inlining call to NewSession
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:200: inlining call to (*Session).Name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:205: inlining call to (*Session).Name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:211: inlining call to (*Session).Name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:231: inlining call to (*Session).Name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:40: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:38: leaking param: store
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:38: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:42: &Session literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:40: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:38: leaking param: store
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:38: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:60: (*Session).Flashes s does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:60: (*Session).Flashes vars does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:78: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:78: (*Session).AddFlash s does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:78: (*Session).AddFlash vars does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:92: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:92: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:92: leaking param: w
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:92: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:97: (*Session).Name leaking param s content to result ~r0
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:102: (*Session).Store leaking param s content to result ~r0
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:128: &Registry literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:121: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:128: make(map[string]sessionInfo, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:121: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:128: make(map[string]sessionInfo, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:121: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:128: &Registry literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:121: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:128: make(map[string]sessionInfo, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:143: leaking param: store
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:143: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:143: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:143: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:143: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:143: leaking param: store
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:156: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:156: leaking param: w
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:162: (*Registry).Save ... argument does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:165: (*Registry).Save ... argument does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:177: []interface {} literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:181: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:181: leaking param: w
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:188: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:188: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:188: leaking param: options
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:196: &http.Cookie literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:188: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:188: leaking param: value
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:188: leaking param: options
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:215: MultiError.Error m does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/sessions.go:233: MultiError.Error ... argument does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:58: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:59: &CookieStore literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:58: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:53: NewCookieStore keyPairs does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:76: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:76: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:76: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:86: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:87: moved to heap: opts
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:88: &opts escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:92: &session.Values escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:86: &Session literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:86: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:86: &Session literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:86: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:85: (*CookieStore).New r does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:103: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:103: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:103: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:103: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:103: leaking param: w
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:103: (*CookieStore).Save s does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:103: (*CookieStore).Save r does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:131: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:123: leaking param: path
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:133: &FilesystemStore literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:131: &Options literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:123: leaking param: path
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:123: NewFilesystemStore keyPairs does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:151: (*FilesystemStore).MaxLength s does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:162: leaking param: r
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:162: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:162: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:223: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:225: fileMutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:226: fileMutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:223: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:232: &session.Values escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:223: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:224: (*FilesystemStore).load ... argument does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:171: moved to heap: opts
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:172: &opts escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:176: &session.ID escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: &Session literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: &Session literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: &Session literal escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:170: make(map[interface {}]interface {}, 0) escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: leaking param: name
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:169: (*FilesystemStore).New r does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:210: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:210: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:210: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:217: fileMutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:218: fileMutex escapes to heap
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:216: (*FilesystemStore).save ... argument does not escape
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: leaking param: s
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: leaking param: session
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: leaking param: w
+Godeps/_workspace/src/github.com/gorilla/sessions/store.go:189: (*FilesystemStore).Save r does not escape
+github.com/EricLagerg/pnwconference/helpers
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/helpers/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/helpers
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/pnwconference/helpers.a -trimpath $WORK -m -p github.com/EricLagerg/pnwconference/helpers -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/helpers -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./helpers.go
+# github.com/EricLagerg/go-prng/xorshift
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:196: can inline (*Shift64Star).Next
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:62: inlining call to (*Shift64Star).Next
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:43: make([]byte, 8) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:30: make([]uint64, n) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:58: make([]uint64, n) escapes to heap
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:59: fillWithXOR new(Shift64Star) does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:97: (*Shift116Plus).Next s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:106: (*Shift116Plus).Seed s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:107: (*Shift116Plus).Seed s.state does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:122: (*Shift128Plus).Next s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:131: (*Shift128Plus).Seed s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:132: (*Shift128Plus).Seed s.state does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:146: (*Shift1024Star).Next s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:157: (*Shift1024Star).Seed s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:158: (*Shift1024Star).Seed s.state does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:173: (*Shift4096Star).Next s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:184: (*Shift4096Star).Seed s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:185: (*Shift4096Star).Seed s.state does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:196: (*Shift64Star).Next s does not escape
+Godeps/_workspace/src/github.com/EricLagerg/go-prng/xorshift/xorshift.go:203: (*Shift64Star).Seed s does not escape
+github.com/EricLagerg/pnwconference/tokens
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/tokens/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/tokens
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/pnwconference/tokens.a -trimpath $WORK -m -p github.com/EricLagerg/pnwconference/tokens -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/tokens -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./tokens.go
+# github.com/EricLagerg/pnwconference/helpers
+helpers/helpers.go:69: can inline GetUsername
+helpers/helpers.go:15: moved to heap: a
+helpers/helpers.go:51: a escapes to heap
+helpers/helpers.go:69: GetUsername session does not escape
+golang.org/x/crypto/blowfish
+mkdir -p $WORK/golang.org/x/crypto/blowfish/_obj/
+mkdir -p $WORK/golang.org/x/crypto/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/crypto/blowfish
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/golang.org/x/crypto/blowfish.a -trimpath $WORK -m -p golang.org/x/crypto/blowfish -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/crypto/blowfish -I $WORK -pack ./block.go ./cipher.go ./const.go
+# github.com/EricLagerg/pnwconference/tokens
+tokens/tokens.go:60: inlining call to EncodedLen
+tokens/tokens.go:77: inlining call to hex.EncodedLen
+tokens/tokens.go:67: make([]byte, HashSize) escapes to heap
+tokens/tokens.go:77: make([]byte, int(~r0)) escapes to heap
+tokens/tokens.go:70: newSecureToken ... argument does not escape
+tokens/tokens.go:74: newSecureToken ... argument does not escape
+tokens/tokens.go:80: newSecureToken ... argument does not escape
+tokens/tokens.go:60: make([]byte, int(~r0)) escapes to heap
+tokens/tokens.go:51: NewCSRFToken id does not escape
+tokens/tokens.go:56: NewCSRFToken ... argument does not escape
+tokens/tokens.go:96: init·1 ... argument does not escape
+tokens/tokens.go:101: init·1 ... argument does not escape
+tokens/tokens.go:114: NewJobID buf does not escape
+golang.org/x/exp/inotify
+mkdir -p $WORK/golang.org/x/exp/inotify/_obj/
+mkdir -p $WORK/golang.org/x/exp/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/exp/inotify
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/golang.org/x/exp/inotify.a -trimpath $WORK -m -p golang.org/x/exp/inotify -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/exp/inotify -I $WORK -pack ./inotify_linux.go
+# golang.org/x/crypto/blowfish
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:60: can inline (*Cipher).BlockSize
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:9: getNextWord b does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:9: getNextWord pos does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:115: encryptBlock c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:28: ExpandKey key does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:28: ExpandKey c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:71: expandKeyWithSalt key does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:71: expandKeyWithSalt salt does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:71: expandKeyWithSalt c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:74: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:80: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:81: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:87: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:88: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:94: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:95: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:101: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:102: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:108: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:109: expandKeyWithSalt &j does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:138: decryptBlock c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:85: initCipher c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:86: initCipher c.p does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:86: initCipher p does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:87: initCipher c.s0 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:87: initCipher s0 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:88: initCipher c.s1 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:88: initCipher s1 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:89: initCipher c.s2 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:89: initCipher s2 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:90: initCipher c.s3 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:90: initCipher s3 does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:31: moved to heap: result
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:37: &result escapes to heap
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:30: NewCipher key does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:35: NewCipher &result does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:36: NewCipher &result does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:48: moved to heap: result
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:54: &result escapes to heap
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:44: NewSaltedCipher key does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:44: NewSaltedCipher salt does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:52: NewSaltedCipher &result does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:53: NewSaltedCipher &result does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:60: (*Cipher).BlockSize c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:67: (*Cipher).Encrypt c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:67: (*Cipher).Encrypt dst does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:67: (*Cipher).Encrypt src does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:77: (*Cipher).Decrypt c does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:77: (*Cipher).Decrypt dst does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/cipher.go:77: (*Cipher).Decrypt src does not escape
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:118: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:119: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:120: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:121: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:122: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:123: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:124: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:125: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:126: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:127: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:128: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:129: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:130: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:131: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:132: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:133: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:141: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:142: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:143: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:144: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:145: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:146: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:147: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:148: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:149: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:150: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:151: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:152: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:153: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:154: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:155: index bounds check elided
+Godeps/_workspace/src/golang.org/x/crypto/blowfish/block.go:156: index bounds check elided
+golang.org/x/crypto/bcrypt
+mkdir -p $WORK/golang.org/x/crypto/bcrypt/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/crypto/bcrypt
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/golang.org/x/crypto/bcrypt.a -trimpath $WORK -m -p golang.org/x/crypto/bcrypt -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/src/golang.org/x/crypto/bcrypt -I $WORK -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./base64.go ./bcrypt.go
+# golang.org/x/exp/inotify
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:65: inlining call to os.NewSyscallError
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:102: inlining call to errors.New
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:140: inlining call to errors.New
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:144: inlining call to os.NewSyscallError
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:171: inlining call to os.NewSyscallError
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:177: inlining call to os.NewSyscallError
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:181: inlining call to errors.New
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:171: &os.SyscallError literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:177: &os.SyscallError literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:181: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:199: w.mu escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:152: leaking param: w
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:201: w.mu escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:152: leaking param: w
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:191: new(Event) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:156: (*Watcher).readEvents buf does not escape
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:190: (*Watcher).readEvents &buf[offset] does not escape
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:204: (*Watcher).readEvents &buf[offset + syscall.SizeofInotifyEvent] does not escape
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:69: make(map[string]*watch, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:70: make(map[int]string, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:71: make(chan *Event, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:72: make(chan error, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:73: make(chan bool, 1) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:73: &Watcher literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:69: make(map[string]*watch, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:70: make(map[int]string, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:71: make(chan *Event, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:72: make(chan error, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:73: make(chan bool, 1) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:73: &Watcher literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:69: make(map[string]*watch, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:70: make(map[int]string, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:71: make(chan *Event, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:72: make(chan error, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:73: make(chan bool, 1) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:65: &os.SyscallError literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:73: &Watcher literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:69: make(map[string]*watch, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:70: make(map[int]string, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:71: make(chan *Event, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:72: make(chan error, 0) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:73: make(chan bool, 1) escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:137: leaking param: path
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:140: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:144: &os.SyscallError literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:137: (*Watcher).RemoveWatch w does not escape
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:140: (*Watcher).RemoveWatch ... argument does not escape
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:83: (*Watcher).Close w does not escape
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:111: w.mu escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:100: leaking param: w
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:115: w.mu escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:100: leaking param: w
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:100: leaking param: path
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:100: leaking param: path
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:124: &watch literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:100: leaking param: path
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:127: w.mu escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:100: leaking param: w
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:102: &errors.errorString literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:119: &os.PathError literal escapes to heap
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:100: leaking param: path
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:132: leaking param: w
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:132: leaking param: path
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:219: leaking param: e
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:231: (*Event).String ... argument does not escape
+Godeps/_workspace/src/golang.org/x/exp/inotify/inotify_linux.go:237: (*Event).String ... argument does not escape
+github.com/EricLagerg/pnwconference/reload
+mkdir -p $WORK/github.com/EricLagerg/pnwconference/reload/_obj/
+cd /home/eric/gopath/src/github.com/EricLagerg/pnwconference/reload
+/usr/lib/go/pkg/tool/linux_amd64/6g -o $WORK/github.com/EricLagerg/pnwconference/reload.a -trimpath $WORK -m -p github.com/EricLagerg/pnwconference/reload -complete -D _/home/eric/gopath/src/github.com/EricLagerg/pnwconference/reload -I $WORK -I /home/eric/gopath/pkg/linux_amd64 -I /home/eric/gopath/src/github.com/EricLagerg/pnwconference/Godeps/_workspace/pkg/linux_amd64 -pack ./enum.go ./reload.go ./tmplname_string.go

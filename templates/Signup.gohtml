@@ -1,0 +1,26 @@
+{{define "title"}}<title>Signup</title>{{end}}
+
+{{define "body"}}
+	<h2>Sign Up</h2>
+	<form action="/signup/" method="POST" accept-charset="utf-8">
+		<input name="_csrf" type="hidden" value="{{printf "%s" .CSRF}}">
+
+		<label for="_fname">First name</label>
+		<input name="_fname" type="text">
+
+		<label for="_lname">Last name</label>
+		<input name="_lname" type="text">
+
+		<label for="_email">Email</label>
+		<input name="_email" type="email">
+
+		<label for="_school">School</label>
+		<input name="_school" type="text">
+
+		<label for="_state">State</label>
+		<input name="_state" type="text">
+
+		<input type="submit" value="pay now">
+        <span class="error-msg">{{.Error}}</span>
+	</form>
+{{end}}
